@@ -48,17 +48,4 @@ publishing {
             from components.java
         }
     }
-	
-	repositories {
-        maven {
-            url "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
-            credentials(HttpHeaderCredentials) {
-                name = "Deploy-Token"
-                value = deployToken
-            }
-            authentication {
-                header(HttpHeaderAuthentication)
-            }
-        }
-    }
 }
