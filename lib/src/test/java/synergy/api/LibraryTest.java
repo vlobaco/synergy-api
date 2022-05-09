@@ -99,7 +99,7 @@ class LibraryTest {
 		assertEquals(line, "This is a remote file.");
 		assertEquals(attachmentField.getName(), name);
 		assertEquals(attachmentField.getDescription(), description);
-		assertEquals(attachmentField.getURL(), url);
+		assertEquals(attachmentField.getUrl(), url);
 		assertEquals(attachmentField.getCompulsory(), compulsory);
 	}
 		

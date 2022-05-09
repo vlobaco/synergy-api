@@ -22,7 +22,7 @@ public class AttachmentField extends Field {
 		if (reader == null) {
 			try {
 				reader = new BufferedReader(
-						new InputStreamReader(getURL().openStream()));
+						new InputStreamReader(getUrl().openStream()));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -30,11 +30,11 @@ public class AttachmentField extends Field {
 		return reader;
 	}
 
-	public URL getURL() {
+	public URL getUrl() {
 		return url;
 	}
 
-	public void setURL(URL url) {
+	public void setUrl(URL url) {
 		this.url = url;
 	}
 
