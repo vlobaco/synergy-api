@@ -9,7 +9,6 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
-    id 'maven-publish'
 }
 
 repositories {
@@ -38,14 +37,3 @@ test {
 }
 
 sourceCompatibility = '1.8'
-
-publishing {
-    publications {
-        library(MavenPublication) {
-        	groupId = 'es.mdef'
-        	artifactId = 'synergy-api'
-        	version = '1.0.0-SNAPSHOT'
-            from components.java
-        }
-    }
-}
