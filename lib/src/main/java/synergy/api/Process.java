@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Process extends Component {
-	//private List<Field> fields;
+	private List<Field> fields;
 	
 	public Process() {
 		this(null, null, null);
@@ -12,12 +12,10 @@ public class Process extends Component {
 	
 	public Process(Integer id, String name, String description) {
 		super(id, name, description);
-		//fields = new ArrayList<>();
+		fields = new ArrayList<>();
 	}
-	
-	/*
 	public List<Field> getFields() {
-		return fields;
+		return this.fields;
 	}
 	
 	public void addField(Field field) {
@@ -26,7 +24,6 @@ public class Process extends Component {
 			field.setProcess(this);
 		}
 	}
-	*/
 	
 	@Override
 	public String toString() {
